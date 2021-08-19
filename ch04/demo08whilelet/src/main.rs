@@ -5,11 +5,10 @@ enum Alphabet {
 }
 
 fn main() {
-    let letter = Alphabet::A;
+    let mut letter = Alphabet::A;
 
     while let Alphabet::A = letter {
-        println!("{}", letter);
-
+        println!("{:?}", letter);
         letter = Alphabet::B;
     }
 }
